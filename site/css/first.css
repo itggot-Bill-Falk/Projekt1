@@ -32,15 +32,51 @@ display: grid;
   grid-row: 26/28;
   background-color: #567299;
 }
-
-.box1 {
-  display:grid;
-  grid-column: span  8;
-  grid-row: 6/12;
+.litenbox {
+  display: grid;
+  grid-column: span 8;
+  grid-row: 1/6;
+  background-color: #ffae4b
 }
+
+
+.storbox {
+  display: grid;
+  grid-column: span  8;
+  grid-row: 7/25;
+}
+
+
+header img {
+
+}
+
+
 
 .sök{
   display: grid;
-  grid-column: 3/7;
+  grid-column: 3/6;
   grid-row: span 2;
+}
+
+.menu{
+  width: ;
+  height: 100vw;
+  position:absolute;
+  display:none;
+  background-color: #BF6C82;
+}
+
+
+.show{
+  display: block;
+}
+
+H1 {
+  font-family: sans-serif;
+  color: white;
+}
+
+.litenbox img {
+  align: right;
 }
