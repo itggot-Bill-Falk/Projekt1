@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=7, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>workntravel</title>
     <link rel="stylesheet" href="css/first.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,9 +12,24 @@
     <div class = "header">
         <img src="./img/Logo.PNG" alt="Logga" align=left>
         <input type="text" class="sök" placeholder = "search..">
-    </div>   
-
+        <div class="hamburgericon" onClick="toggleMenu()">
+            <i class="material-icons">menu</i>
+        </div>   
+    </div>
     <div class = "main">
+
+        <div class="hamburgare">
+            <ol>
+                <ul><p>Text1</p></ul>
+                <ul><p>Text2</p></ul>
+                <ul><p>Text3</p></ul>
+                <ul><p>Text4</p></ul>
+                <ul><p>Text5</p></ul>
+                <ul><p>Text6</p></ul>
+                <ul><p>Text7</p></ul>
+                <ul><p>Text8</p></ul>
+            </ol>
+        </div>
       
             <H1>
                 Japan
@@ -35,13 +51,17 @@
             <div class = "minibox6">
                 <h2>Show more</h2>
             </div>
+
+            <script src="js/menu.js"></script>
        
     </div> 
+
  
     
     <div class = "footer">
             <i class="material-icons boo">home</i>
             <i class="material-icons foo">account_circle</i>
+            <i class="material-icons hoo">settings</i>
     </div>
 
 </body>

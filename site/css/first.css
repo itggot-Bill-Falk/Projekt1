@@ -1,13 +1,19 @@
+
 body {
-background-color:white;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-width: 360px;
-height: 640px;
-grid-template-columns: repeat(8,1fr);
-grid-template-rows:  repeat(28,1fr);
-margin-left: 600px;
-margin-top: 10px;
-display: grid;
+  background-color:white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows:  repeat(28,1fr);
+  display: grid;
+}
+
+@media (max-width: 1000px) {
+  body {
+    width: 360px;
+    height: 640px;
+  }
 }
 
 .header {
@@ -104,7 +110,7 @@ position: absolute;
   grid-row: 2/3;
   grid-column: 2/3;
   background-color: #bf6c82;
-  position: relative;
+  position: absolute;
 }
 
 .minibox5 {
@@ -119,6 +125,7 @@ position: absolute;
   display:grid;
   grid-row: 3/4;
   grid-column: 2/3;
+  background-color: #ffae4b;
   position: relative;
 }
 
@@ -134,6 +141,7 @@ position: absolute;
   font-family: sans-serif;
   position: absolute;
   left: 10px;
+  
 }
 
 .minibox5 h2 {
@@ -161,7 +169,6 @@ position: absolute;
   grid-column: 1/2;
   margin-left: 20px;
   color: white;
-  font-size: 40px;
 }
 
 .foo {
@@ -170,4 +177,52 @@ position: absolute;
   grid-column: 2/3;
   margin-left: 39px;
   color: white;
+}
+
+.hoo{
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 3/4;
+  margin-left: 55px;
+  color: white;
+
+}
+
+.header i {
+  position: absolute;
+  left: 310PX;
+  top: 4px;
+  font-size: 40px;
+  color: white;  
+  
+}
+
+.hamburgare {
+  position: absolute;
+  display: grid;
+  background-color:#795c79;
+  width: 180px;
+  height: 350px;
+  left: 180px;
+  display: none;
+  z-index: 1;
+}
+
+.show {
+  display: block; 
+  z-index: 999;
+}
+
+.hamburgare ol {
+  color: white;
+  font-size: 18px;
+}
+
+@media only screen and (max device width: 400px) {
+  body {
+    background-color: aqua;
+    margin: 0;
+
+    /* Hade ju då tolkat hela uppgiften fel och därför format sidan i skala med en telefon.
+  }
 }
