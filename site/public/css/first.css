@@ -1,0 +1,236 @@
+
+body {
+  background-color:white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows:  repeat(28,1fr);
+  display: grid;
+}
+
+@media (max-width: 1000px) {
+  body {
+    width: 360px;
+    height: 640px;
+  }
+}
+
+.header {
+  display: grid;
+  grid-column: span 8;
+  grid-row: span 2;
+  background-color: #567299;
+  position: relative;
+}
+
+  
+.main {
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
+  grid-column: span 8;
+  grid-row: 3/26;
+  background-color: #E7727E;
+  position: relative;
+}
+
+.footer{
+  display: grid;
+  grid-column: span 8;
+  grid-row: 26/28;
+  background-color: #567299;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(3,1fr)
+}
+
+
+
+
+.sök{  
+  position: absolute;
+  top:8px;
+  left: 90px;
+  height:25px;
+  width: 180px;
+  border-radius: 5px;
+  border:3px solid #ffae4b;
+}
+
+
+
+
+
+.show{
+  display: block;
+}
+
+H1 {
+  font-family: sans-serif;
+  color: white;
+  position: absolute;
+  left: 10px;
+  top: 40px;
+}
+.litenbox {
+  background-color: antiquewhite;
+}
+
+.main img  {
+height: 60px;
+top:52px;
+left : 220px;
+position: absolute;
+}
+
+img flygplan {
+grid-column: 1/3;
+grid-row: 1/4;
+display: grid;  
+width:100px;
+height: 100px;
+}
+
+
+.minibox1 {
+  display:grid;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  background-color: #ffae4b;
+}
+
+.minibox2 {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  background-color: #ffae4b;
+}
+
+.minibox3 {
+  display: grid; 
+  grid-row: 2/3;
+  grid-column: 1/2;
+  background-color: #567299;
+}
+
+.minibox4 {
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: #bf6c82;
+  position: absolute;
+}
+
+.minibox5 {
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 1/2;
+  background-color: #795c79;
+  position: relative;
+}
+
+.minibox6 {
+  display:grid;
+  grid-row: 3/4;
+  grid-column: 2/3;
+  background-color: #ffae4b;
+  position: relative;
+}
+
+.minibox3 h2 {
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  left: 10px;
+}
+
+.minibox4 h2 {
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  left: 10px;
+  
+}
+
+.minibox5 h2 {
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  left:10px;
+}
+
+.minibox6 h2 {
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  left:10px;
+  top: 5px;
+}
+
+.footer i{
+  font-size: 40px;
+}
+
+.boo {
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin-left: 20px;
+  color: white;
+}
+
+.foo {
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin-left: 39px;
+  color: white;
+}
+
+.hoo{
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 3/4;
+  margin-left: 55px;
+  color: white;
+
+}
+
+.header i {
+  position: absolute;
+  left: 310PX;
+  top: 4px;
+  font-size: 40px;
+  color: white;  
+  
+}
+
+.hamburgare {
+  position: absolute;
+  display: grid;
+  background-color:#795c79;
+  width: 180px;
+  height: 350px;
+  left: 180px;
+  display: none;
+  z-index: 1;
+}
+
+.show {
+  display: block; 
+  z-index: 999;
+}
+
+.hamburgare ol {
+  color: white;
+  font-size: 18px;
+}
+
+@media only screen and (max device width: 400px) {
+  body {
+    background-color: aqua;
+    margin: 0;
+
+    /* Hade ju då tolkat hela uppgiften fel och därför format sidan i skala med en telefon.
+  }
+}

@@ -76,11 +76,19 @@ H1 {
   background-color: antiquewhite;
 }
 
-.main img {
+.main img  {
 height: 60px;
 top:52px;
 left : 220px;
 position: absolute;
+}
+
+img flygplan {
+grid-column: 1/3;
+grid-row: 1/4;
+display: grid;  
+width:100px;
+height: 100px;
 }
 
 
