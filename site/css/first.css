@@ -14,6 +14,10 @@ body {
     width: 360px;
     height: 640px;
   }
+  img flygplan {
+    width: 100px;
+    height: 100px;
+    }
 }
 
 .header {
@@ -76,19 +80,11 @@ H1 {
   background-color: antiquewhite;
 }
 
-.main img  {
-height: 60px;
-top:52px;
-left : 220px;
-position: absolute;
-}
 
-img flygplan {
-grid-column: 1/3;
-grid-row: 1/4;
-display: grid;  
-width:100px;
-height: 100px;
+
+ img flygplan {
+width:50vw;
+height: 50vw;
 }
 
 
@@ -230,7 +226,6 @@ height: 100px;
   body {
     background-color: aqua;
     margin: 0;
-
-    /* Hade ju då tolkat hela uppgiften fel och därför format sidan i skala med en telefon.
   }
+}
 }
